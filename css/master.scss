@@ -1,2 +1,9 @@
 @import "variables";
 @import "navbar";
+
+.landing div {
+  h1, h3 {
+    color: $white;
+    font-family: $pfont;
+  }
+}
