@@ -1,8 +1,4 @@
 @import "variables";
-<<<<<<< HEAD
-=======
-@import "gallery";
->>>>>>> 18b45860d2f8b4bcf45950ca42e66e8fb493dd92
 
 .landing {
   flex-direction: column;
@@ -83,12 +79,24 @@
     .row-ms .social {
       display: flex;
       border-top: 2px solid $white;
-      flex-direction: row;
+      flex-direction: column;
       text-align: center;
       padding: 15px;
-      i {
+      h1 {
         color: $white;
-        padding-right: 10px;
+        font-family: $pfont;
+        font-size: 20px;
+        text-align: left;
+      }
+      div {
+        display: flex;
+        justify-content: flex-start;
+        i {
+          color: $white;
+          padding-top: 10px;
+          padding-right: 10px;
+          text-align: left;
+        }
       }
     }
   }
@@ -125,4 +133,3 @@
 
 @import "navbar";
 @import "gallery";
-@import "contact";
