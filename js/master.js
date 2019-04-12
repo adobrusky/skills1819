@@ -4,6 +4,9 @@ function navbarChange() {
     $('.nav, .nav-items').css('backgroundColor', '#353535');
   } else if(pageScroll === 0){
     $('.nav, .nav-items').css('backgroundColor', 'rgba(0, 0, 0, 0.3)');
+    if(screenWidth > large) {
+      $('.nav-items').css('backgroundColor', 'transparent');
+    }
     console.log(navbarHeight);
   }
   console.log(screenWidth + ' ' + pageScroll);
