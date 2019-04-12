@@ -1,8 +1,58 @@
 @import "variables";
 
-.container {
-  img {
-  height: 250px;
-  width: 250px;
+.content {
+  h1 {
+    font-family: $pfont;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px 20px 0px;
   }
+  .container {
+    flex-direction: column;
+    background-color: $white;
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@media only screen and (min-width: 436px) {
+  .content {
+    h1 {
+      font-size: 30px;
+      padding: 20px 0px 20px 0px;
+    }
+    .container {
+      flex-direction: row;
+      img {
+        width: 50%;
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    h1 {
+      font-size: 40px;
+      padding: 20px 0px 20px 0px;
+    }
+    .container {
+      flex-direction: row;
+      img {
+        width: 33.3%;
+        flex-basis: 33.3%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
 }
