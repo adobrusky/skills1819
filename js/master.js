@@ -1,12 +1,12 @@
-let pageScroll;
+let pageScroll = $(window).scrollTop();
 function navbarChange() {
   if(pageScroll > 0 || screenWidth < medium) {
     $('.nav, .nav-items').css('backgroundColor', '#353535');
-  } else if(pageScroll === 0 && screenWidth > medium){
+  } else if(pageScroll === 0){
     $('.nav, .nav-items').css('backgroundColor', 'rgba(0, 0, 0, 0.3)');
     console.log(navbarHeight);
   }
-  console.log(screenWidth);
+  console.log(screenWidth + ' ' + pageScroll);
 }
 
 $(document).ready(function() {
@@ -16,6 +16,6 @@ $(document).ready(function() {
     navbarChange();
   })
   $(window).resize(function() {
-        navbarChange();
+    navbarChange();
   })
 });

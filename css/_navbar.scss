@@ -1,7 +1,7 @@
 @import "variables";
 .nav {
   background-color: $black;
-  transition: background-color .3s;
+  transition: background-color .3s, top .3s;
   .brand {
     margin-left: 3%;
   }
@@ -14,7 +14,7 @@
   }
   .nav-items {
     background-color: $black;
-      transition: background-color .3s, right .6s;
+      transition: background-color .3s, right .6s, top .3s;
     .close {
       color: $white;
     }
@@ -44,9 +44,8 @@
 
 @media only screen and (min-width: 768px) {
   .nav {
-    background-color: rgba(0, 0, 0, 0.3);
     .nav-items {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
       .item a {
         font-size: 17px;
       }
@@ -61,7 +60,6 @@
     }
     .nav-items {
       margin-right: 10%;
-      background-color: transparent;
       .item {
         a {
           font-size: 1.2vw;
