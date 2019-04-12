@@ -1,0 +1,60 @@
+@import "variables";
+.nav {
+  background-color: $black;
+  .brand {
+    margin-left: 3%;
+  }
+  .burger {
+    background-color: $black;
+    border-color: $white;
+    i {
+      color: $white;
+    }
+  }
+  .nav-items {
+    background-color: $black;
+    .close {
+      color: $white;
+    }
+    .item {
+      a {
+        color: $white;
+        font-family: $pfont;
+      }
+      &.active {
+        a {
+          color: $lgreen;
+          font-family: $pfont;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 436px) {
+
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    .brand {
+      margin-left: 10%;
+    }
+    .nav-items {
+      margin-right: 10%;
+      .item {
+        a {
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+}
