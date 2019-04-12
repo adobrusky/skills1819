@@ -1,6 +1,7 @@
 @import "variables";
 .nav {
   background-color: $black;
+  transition: background-color .3s;
   .brand {
     margin-left: 3%;
   }
@@ -13,6 +14,7 @@
   }
   .nav-items {
     background-color: $black;
+      transition: background-color .3s, right .6s;
     .close {
       color: $white;
     }
@@ -33,12 +35,7 @@
 }
 
 @media only screen and (min-width: 436px) {
-  .nav {
-    background-color: rgba(0, 0, 0, 0.3);
-    .burger {
-      background-color: transparent;
-    }
-  }
+
 }
 
 @media only screen and (min-width: 620px) {
