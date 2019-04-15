@@ -2,6 +2,7 @@
 .nav {
   background-color: $black;
   transition: background-color .5s, top 1s;
+  max-height: 75px;
   .brand {
     margin-left: 3%;
   }
